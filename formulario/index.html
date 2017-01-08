@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de consulta</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/disenio.css" rel="stylesheet" type="text/css" />
+
+</head>
+<script type="text/javascript">
+	function click(){
+		var expediente = document.formulario.tabla.inputia.espediente;
+		alert(expediente);
+	}
+
+</script>
+<body style="background-image: url(images/fondo.jpg)">
+	<header>
+	<h1>Bienvenido a su Consulta.</h1>
+	</header>
+	<br>
+	<div>
+		<form name="formulario">
+				<h2 align="center">Ingrese datos</h2>
+				<div>
+					<table name="tabla">
+					<tr>
+						<td align="center" style="color:blue">Nº de Expediente:</tr>
+						<td name="inputia"><input class="in" type="number" name="nro_expe" align="center" placeholder="Año + Nº expte " id="espediente"><br></tr>
+					</tr>
+					<tr>
+						<td align="center" style="color:blue">Fecha de inicio:</tr>
+						<td><input class="in" type="date" name="inicio" align="center" value="1990-1-1"><br></tr>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					</table>
+				</div>
+
+				<input id="boton" type="submit" value="Consulta" name="consulta" onclick="click()">
+			</form>
+	</div>
+</body>
+
+</html>
